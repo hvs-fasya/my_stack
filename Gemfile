@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-'ruby 2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -41,6 +40,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   #gem 'byebug'
   gem 'pry-byebug', platform: [:ruby_20]
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
@@ -50,4 +50,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'letter_opener'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.0'
+  gem 'factory_girl'
 end
