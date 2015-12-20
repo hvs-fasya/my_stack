@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  #get 'answers/new'
+
+  #get 'answers/create'
+
+  #get 'questions/new'
+
+  #get 'questions/create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -25,6 +33,9 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  resources :questions do
+    resources :answers
+  end
 
   # Example resource route with sub-resources:
   #   resources :products do

@@ -355,6 +355,92 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1850,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/application.rb",
+			"settings":
+			{
+				"buffer_size": 1510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/models/question_spec.rb",
+			"settings":
+			{
+				"buffer_size": 442,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/models/answer_spec.rb",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/question.rb",
+			"settings":
+			{
+				"buffer_size": 145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/answer.rb",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/var/www/landings/cool-yurist.ru/resources/assets/js/cool-yurist-lead.js",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "FactoryGirl.define do\n	\n  factory :question do\n    title \"My question\"\n    body \"question body\"\n  end\n\n  factory :invalid_question, class: 'Question' do\n    title nil\n    body nil\n  end\n\nend\n",
+			"file": "spec/factories/questions.rb",
+			"file_size": 189,
+			"file_write_time": 130945913409476715,
+			"settings":
+			{
+				"buffer_size": 191,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20151214182611_create_questions.rb",
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20151214184424_create_answers.rb",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -388,10 +474,20 @@
 	},
 	"expanded_folders":
 	[
-		"/home/hvs-fasya/my_stack"
+		"/home/hvs-fasya/my_stack",
+		"/home/hvs-fasya/my_stack/app",
+		"/home/hvs-fasya/my_stack/app/models",
+		"/home/hvs-fasya/my_stack/config",
+		"/home/hvs-fasya/my_stack/db",
+		"/home/hvs-fasya/my_stack/db/migrate",
+		"/home/hvs-fasya/my_stack/spec",
+		"/home/hvs-fasya/my_stack/spec/factories",
+		"/home/hvs-fasya/my_stack/spec/models"
 	],
 	"file_history":
 	[
+		"/home/hvs-fasya/my_stack/db/migrate/20151214184424_create_answers.rb",
+		"/home/hvs-fasya/my_stack/db/migrate/20151214163333_create_questions.rb",
 		"/home/hvs-fasya/my_habr/app/controllers/subscriptions_controller.rb",
 		"/home/hvs-fasya/my_habr/app/views/admin/categories/_categories.html.erb",
 		"/home/hvs-fasya/my_stack/spec/models/question_spec.rb",
@@ -517,9 +613,7 @@
 		"/home/hvs-fasya/my_habr/app/models/profile.rb",
 		"/home/hvs-fasya/my_habr/db/migrate/20151103194429_create_profiles.rb",
 		"/home/hvs-fasya/my_habr/app/models/tag.rb",
-		"/home/hvs-fasya/my_habr/db/migrate/20151102185159_create_tags.rb",
-		"/home/hvs-fasya/my_habr/app/models/posts_tag.rb",
-		"/home/hvs-fasya/my_habr/app/models/categories_post.rb"
+		"/home/hvs-fasya/my_habr/db/migrate/20151102185159_create_tags.rb"
 	],
 	"find":
 	{
@@ -568,8 +662,293 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1828,
+								1828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/application.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/models/question_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								434,
+								434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/models/answer_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/models/question.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/answer.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/var/www/landings/cool-yurist.ru/resources/assets/js/cool-yurist-lead.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spec/factories/questions.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "db/migrate/20151214182611_create_questions.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "db/migrate/20151214184424_create_answers.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
 			]
 		}
 	],
