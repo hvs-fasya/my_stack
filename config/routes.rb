@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   #     end
   #   end
   resources :questions do
-    resources :answers
+    resources :answers, shallow: true
   end
 
   # Example resource route with sub-resources:
