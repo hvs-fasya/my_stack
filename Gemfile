@@ -44,6 +44,7 @@ group :development, :test do
   gem 'pry-byebug', platform: [:ruby_20]
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
@@ -58,5 +59,4 @@ end
 group :test do
   gem 'shoulda-matchers', '~> 3.0'
   gem 'factory_girl_rails'
-  gem 'launchy'
 end

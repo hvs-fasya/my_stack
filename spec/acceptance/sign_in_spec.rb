@@ -6,26 +6,26 @@ feature 'Signing in', %q{
 	I want to be able to sign in
     } do
 
-	given!(:user) {FactoryGirl.create(:user)}
+	given!(:user) { create(:user) }
 	scenario 'Existing user tries to sign in' do
 	  #User.create(email: 'user@test.com, password: '12345678')
-	
 	  visit new_user_session_path
-	  fill_in 'Email', with: 'user@test.com'
-	  fill_in 'password', with: '12345678'
-	  save_and_open_page
+	  fill_in 'Email', with: user.email
+	  fill_in 'Password', with: '12345678'
 	  click_on 'Log in'
+	  save_and_open_page
 
 	  expect(page).to have_content 'Signed in successfully'
 	  expect(page).to have_link 'Log out' 
 	end
 	scenario 'Non-Existing user tries to sign in' do
+	  visit new_user_session_path
 	  fill_in 'Email', with: 'wrong@test.com'
-	  fill_in 'password', with: 'wrong'
-	  save_and_open_screenshot
+	  fill_in 'Password', with: 'wrong'
 	  click_on 'Log in'
+	  save_and_open_page
 
-	  expect(page).to have_content 'Signed not successfully'
-	  expect(page).to_not have_link 'Sign out'
+	  expect(page).to have_content 'Invalid email or password'
+	  expect(page).to_not have_link 'Log out'
 	end
-    end
+end

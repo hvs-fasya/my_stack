@@ -372,14 +372,6 @@
 			}
 		},
 		{
-			"file": "config/private_pub.yml",
-			"settings":
-			{
-				"buffer_size": 318,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "spec/models/question_spec.rb",
 			"settings":
 			{
@@ -400,6 +392,22 @@
 			"settings":
 			{
 				"buffer_size": 1769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/hvs-fasya/my_habr/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 2275,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/questions/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -428,13 +436,10 @@
 			}
 		},
 		{
-			"contents": "require 'rails_helper'\n\nRSpec.describe QuestionsController, type: :controller do\n\n  let(:question){ FactoryGirl.create(:question) }\n  \n  describe \"GET #index\" do\n    before {get :index}\n    # it \"returns http success\" do\n    it 'loads all questions' do\n      questions = FactoryGirl.create_list(:question, 3)\n      # get :index\n      # expect(response).to have_http_status(:success)\n      expect(assigns(:questions)).to eq questions\n    end\n    it \"renders #index template\" do\n      # questions = FactoryGirl.create_list(:question, 3)\n      # get :index\n      expect(response).to render_template :index\n    end\n\n  end\n\n  describe \"GET #show\" do\n    \n    before {get :show, id: question}\n    it 'loads question' do\n      # expect(response).to have_http_status(:success)\n      expect(assigns(:question)).to eq question\n    end\n    it \"renders #show template\" do\n      expect(response).to render_template :show\n    end\n  end\n\n  describe \"GET #new\" do\n    before {get :new}\n    it \"assigns new Question\" do\n      expect(assigns(:question)).to be_a_new(Question)\n    end\n    it \"renders #new template\" do\n      expect(response).to render_template :new\n    end\n  end\n\n  describe \"GET #edit\" do\n    before {get :edit, id: question}\n    it \"loads question\" do\n      expect(assigns(:question)).to eq question\n    end\n    it \"renders #edit template\" do\n      expect(response).to render_template :edit\n    end\n  end\n\n  describe \"POST #create\" do\n    context 'with valid' do\n      it 'saves new question in DB' do\n        expect { post :create, question: FactoryGirl.attributes_for(:question) }.to change(Question, :count).by(1)\n      end\n      it 'redirects to show' do\n        post :create, question: FactoryGirl.attributes_for(:question)\n        expect(response).to redirect_to question_path(assigns(:question))\n      end\n    end\n    context 'with invalid' do\n      it 'does not save new question in DB' do\n        expect { post :create, question: FactoryGirl.attributes_for(:invalid_question) }.to_not change(Question, :count)\n      end\n      it 'renders #new template' do\n        post :create, question: FactoryGirl.attributes_for(:invalid_question)\n        expect(response).to render_template :new\n      end\n    end\n  end\n\n  describe \"PATCH #update\" do\n    context 'with valid' do\n     before { patch :update, id: question, question: {title: 'new title', body: 'new body'} }\n      it 'changes question' do\n        question.reload\n        expect(question.title).to eq 'new title'\n        expect(question.body).to eq 'new body'\n      end\n      it 'redirects to #show' do\n        expect(response).to redirect_to question\n      end\n    end\n    context 'with invalid' do\n      before { patch :update, id: question, question: {title: nil, body: nil} }\n      it 'does not change question attributes' do\n        question.reload\n        expect(question.title).to eq \"My question\"\n        expect(question.body).to eq \"question body\"\n      end\n      it 'renders #edit template' do\n        expect(response).to render_template :edit\n      end\n    end\n  end\n\n  describe \"DELETE #destroy\" do\n    before { question }\n    it 'deletes question from DB' do\n      expect {delete :destroy, id: question}.to change(Question, :count).by(-1)\n    end\n    it 'redirects to #index' do\n      delete :destroy, id: question\n      expect(response).to redirect_to questions_path\n    end\n\n  end\n\nend\n",
 			"file": "spec/controllers/questions_controller_spec.rb",
-			"file_size": 3357,
-			"file_write_time": 130951015071704524,
 			"settings":
 			{
-				"buffer_size": 3361,
+				"buffer_size": 3357,
 				"line_ending": "Unix"
 			}
 		},
@@ -466,7 +471,7 @@
 			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 450,
+				"buffer_size": 502,
 				"line_ending": "Unix"
 			}
 		}
@@ -690,7 +695,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -706,8 +711,8 @@
 						"selection":
 						[
 							[
-								1075,
-								1075
+								1173,
+								1173
 							]
 						],
 						"settings":
@@ -717,10 +722,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -750,39 +755,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "config/private_pub.yml",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 318,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "spec/models/question_spec.rb",
 					"semi_transient": false,
 					"settings":
@@ -806,11 +783,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "spec/models/answer_spec.rb",
 					"semi_transient": false,
 					"settings":
@@ -834,11 +811,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "config/routes.rb",
 					"semi_transient": false,
 					"settings":
@@ -850,8 +827,8 @@
 						"selection":
 						[
 							[
-								977,
-								977
+								762,
+								762
 							]
 						],
 						"settings":
@@ -861,14 +838,72 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 288.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/hvs-fasya/my_habr/config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "app/views/questions/index.html.erb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "spec/factories/answers.rb",
 					"semi_transient": false,
 					"settings":
@@ -892,11 +927,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "app/models/question.rb",
 					"semi_transient": false,
 					"settings":
@@ -920,11 +955,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "app/models/answer.rb",
 					"semi_transient": false,
 					"settings":
@@ -948,16 +983,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "spec/controllers/questions_controller_spec.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3361,
+						"buffer_size": 3357,
 						"regions":
 						{
 						},
@@ -975,14 +1010,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 936.0,
+						"translation.y": 1170.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "app/controllers/questions_controller.rb",
 					"semi_transient": false,
 					"settings":
@@ -1006,11 +1041,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "app/controllers/answers_controller.rb",
 					"semi_transient": false,
 					"settings":
@@ -1034,11 +1069,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "spec/controllers/answers_controller_spec.rb",
 					"semi_transient": false,
 					"settings":
@@ -1061,27 +1096,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 72.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 450,
+						"buffer_size": 502,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								449,
-								449
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1092,7 +1127,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
