@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-'ruby 2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -27,7 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 gem 'devise'
-gem 'rails_12factor'
+gem 'slim-rails'
+gem 'private_pub'
+gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,6 +42,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   #gem 'byebug'
   gem 'pry-byebug', platform: [:ruby_20]
+  gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
 end
 
 group :development do
@@ -50,4 +53,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'letter_opener'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.0'
+  gem 'factory_girl_rails'
+  gem 'launchy'
 end
