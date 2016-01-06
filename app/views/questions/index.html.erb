@@ -1,3 +1,12 @@
 <h2>All Questions List</h2>
 
+
+<div>
+	<% unless @questions.blank? %>
+		<%= render "questions" %>
+	<%else%>
+		<p>There are no any questions yet</p>
+	<%end%>
+</div>
+<hr>
 <%= link_to 'Ask question', new_question_path %>

@@ -100,9 +100,11 @@ RSpec.describe QuestionsController, type: :controller do
     context 'with invalid' do
       before { patch :update, id: question, question: {title: nil, body: nil} }
       it 'does not change question attributes' do
+        old_title = question.title
+        old_body = question.body
         question.reload
-        expect(question.title).to eq "My question"
-        expect(question.body).to eq "question body"
+        expect(question.title).to eq old_title #"My question"
+        expect(question.body).to eq old_body #"question body"
       end
       it 'renders #edit template' do
         expect(response).to render_template :edit

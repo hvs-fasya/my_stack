@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"page"
+			],
+			[
 				"class",
 				"class_name"
 			],
@@ -356,18 +360,18 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "spec/models/user_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1896,
+				"buffer_size": 156,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/application.rb",
+			"file": "config/environments/development.rb",
 			"settings":
 			{
-				"buffer_size": 1510,
+				"buffer_size": 1679,
 				"line_ending": "Unix"
 			}
 		},
@@ -388,34 +392,26 @@
 			}
 		},
 		{
-			"file": "config/routes.rb",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 1769,
+				"buffer_size": 256,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/hvs-fasya/my_habr/config/routes.rb",
+			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 2275,
+				"buffer_size": 424,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/questions/index.html.erb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/factories/answers.rb",
-			"settings":
-			{
-				"buffer_size": 144,
+				"buffer_size": 1896,
 				"line_ending": "Unix"
 			}
 		},
@@ -439,7 +435,63 @@
 			"file": "spec/controllers/questions_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 3357,
+				"buffer_size": 3582,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/questions.rb",
+			"settings":
+			{
+				"buffer_size": 255,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/users.rb",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/rails_helper.rb",
+			"settings":
+			{
+				"buffer_size": 3167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/support/controller_helpers.rb",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/acceptance/create_question_spec.rb",
+			"settings":
+			{
+				"buffer_size": 938,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/support/acceptance_helpers.rb",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/acceptance/sign_in_spec.rb",
+			"settings":
+			{
+				"buffer_size": 710,
 				"line_ending": "Unix"
 			}
 		},
@@ -447,15 +499,23 @@
 			"file": "app/controllers/questions_controller.rb",
 			"settings":
 			{
-				"buffer_size": 750,
+				"buffer_size": 856,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/answers_controller.rb",
+			"file": "app/views/questions/new.html.erb",
 			"settings":
 			{
-				"buffer_size": 505,
+				"buffer_size": 199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/questions/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 77,
 				"line_ending": "Unix"
 			}
 		},
@@ -463,7 +523,7 @@
 			"file": "spec/controllers/answers_controller_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1371,
+				"buffer_size": 1301,
 				"line_ending": "Unix"
 			}
 		},
@@ -513,19 +573,41 @@
 		"/home/hvs-fasya/my_stack/app/controllers",
 		"/home/hvs-fasya/my_stack/app/models",
 		"/home/hvs-fasya/my_stack/app/views",
-		"/home/hvs-fasya/my_stack/app/views/answers",
+		"/home/hvs-fasya/my_stack/app/views/layouts",
 		"/home/hvs-fasya/my_stack/app/views/questions",
-		"/home/hvs-fasya/my_stack/config"
+		"/home/hvs-fasya/my_stack/spec",
+		"/home/hvs-fasya/my_stack/spec/acceptance",
+		"/home/hvs-fasya/my_stack/spec/controllers",
+		"/home/hvs-fasya/my_stack/spec/factories",
+		"/home/hvs-fasya/my_stack/spec/support"
 	],
 	"file_history":
 	[
+		"/home/hvs-fasya/my_stack/app/views/questions/show.html.erb",
+		"/home/hvs-fasya/my_stack/spec/acceptance/sign_in_spec.rb",
+		"/home/hvs-fasya/my_stack/app/controllers/answers_controller.rb",
+		"/home/hvs-fasya/my_stack/app/controllers/questions_controller.rb",
+		"/home/hvs-fasya/my_stack/spec/factories/answers.rb",
+		"/home/hvs-fasya/my_stack/spec/factories/users.rb",
+		"/home/hvs-fasya/my_stack/app/views/questions/index.html.erb",
+		"/home/hvs-fasya/my_stack/config/application.rb",
+		"/home/hvs-fasya/my_stack/spec/rails_helper.rb",
+		"/home/hvs-fasya/my_stack/log/development.log",
+		"/home/hvs-fasya/my_stack/db/migrate/20151227134225_devise_create_users.rb",
+		"/home/hvs-fasya/my_stack/Gemfile",
+		"/home/hvs-fasya/my_stack/config/routes.rb",
+		"/home/hvs-fasya/my_stack/config/environments/test.rb",
+		"/home/hvs-fasya/my_stack/app/views/layouts/application.html.erb",
+		"/home/hvs-fasya/my_stack/app/models/user.rb",
+		"/home/hvs-fasya/my_habr/app/models/user.rb",
+		"/home/hvs-fasya/my_stack/db/seeds.rb",
+		"/home/hvs-fasya/my_habr/db/seeds.rb",
+		"/home/hvs-fasya/my_habr/app/views/posts/index.html.erb",
+		"/home/hvs-fasya/my_habr/config/routes.rb",
 		"/home/hvs-fasya/my_habr/app/controllers/posts_controller.rb",
 		"/var/www/landings/cool-yurist.ru/resources/assets/js/cool-yurist-lead.js",
 		"/home/hvs-fasya/my_stack/spec/factories/questions.rb",
 		"/home/hvs-fasya/my_stack/app/views/questions/edit.html.erb",
-		"/home/hvs-fasya/my_stack/app/views/questions/show.html.erb",
-		"/home/hvs-fasya/my_stack/app/views/questions/index.html.erb",
-		"/home/hvs-fasya/my_habr/config/routes.rb",
 		"/home/hvs-fasya/my_stack/db/migrate/20151214184424_create_answers.rb",
 		"/home/hvs-fasya/my_stack/db/migrate/20151214182611_create_questions.rb",
 		"/home/hvs-fasya/my_habr/db/migrate/20151102163538_add_post_id_to_comments.rb",
@@ -533,13 +615,10 @@
 		"/home/hvs-fasya/my_habr/app/controllers/subscriptions_controller.rb",
 		"/home/hvs-fasya/my_habr/app/views/admin/categories/_categories.html.erb",
 		"/home/hvs-fasya/my_stack/spec/models/question_spec.rb",
-		"/home/hvs-fasya/my_stack/config/application.rb",
 		"/home/hvs-fasya/my_habr/app/views/posts/_form.html.erb",
 		"/home/hvs-fasya/my_stack/db/migrate/20151213180942_create_questions.rb",
 		"/home/hvs-fasya/my_stack/app/models/question.rb",
 		"/home/hvs-fasya/my_stack/app/helpers/application_helper.rb",
-		"/home/hvs-fasya/my_stack/spec/rails_helper.rb",
-		"/home/hvs-fasya/my_stack/Gemfile",
 		"/home/hvs-fasya/my_stack/spec/spec_helper.rb",
 		"/home/hvs-fasya/my_stack/config/environment.rb",
 		"/home/hvs-fasya/my_stack/config.ru",
@@ -547,7 +626,6 @@
 		"/home/hvs-fasya/my_stack/config/boot.rb",
 		"/home/hvs-fasya/my_stack/config/environments/development.rb",
 		"/home/hvs-fasya/my_stack/config/environments/production.rb",
-		"/home/hvs-fasya/my_stack/config/environments/test.rb",
 		"/home/hvs-fasya/my_stack/config/database.yml",
 		"/home/hvs-fasya/my_habr/config/database.yml",
 		"/home/hvs-fasya/my_habr/config.ru",
@@ -587,11 +665,9 @@
 		"/home/hvs-fasya/my_habr/config/application.rb",
 		"/home/hvs-fasya/my_habr/app/views/admin/welcome/index.html.erb",
 		"/home/hvs-fasya/my_habr/app/views/posts/show.html.erb",
-		"/home/hvs-fasya/my_habr/app/models/user.rb",
 		"/home/hvs-fasya/my_habr/config/locales/devise.ru.yml",
 		"/home/hvs-fasya/my_habr/config/locales/en.yml",
 		"/home/hvs-fasya/my_habr/db/migrate/20151122185221_create_subscriptions.rb",
-		"/home/hvs-fasya/my_habr/db/seeds.rb",
 		"/var/www/dor/database/migrations/2015_04_30_101426_create_contents_table.php",
 		"/var/www/dor/database/migrations/2015_06_26_142305_add_indexes_contents_table.php",
 		"/home/hvs-fasya/my_habr/app/helpers/application_helper.rb",
@@ -605,7 +681,6 @@
 		"/home/hvs-fasya/my_habr/app/views/posts/new.html.erb",
 		"/home/hvs-fasya/my_habr/app/helpers/posts_helper.rb",
 		"/home/hvs-fasya/mycrontest.sh",
-		"/home/hvs-fasya/my_habr/app/views/posts/index.html.erb",
 		"/home/hvs-fasya/my_habr/app/views/posts/_subheader_block.html.erb",
 		"/home/hvs-fasya/my_habr/app/mailers/notification_mailer.rb",
 		"/home/hvs-fasya/my_habr/app/views/notification_mailer/comment_notification.html.erb",
@@ -635,18 +710,7 @@
 		"/home/hvs-fasya/my_habr/app/views/admin/posts/_posts.html.erb",
 		"/home/hvs-fasya/my_habr/app/controllers/welcome_controller.rb",
 		"/home/hvs-fasya/my_habr/app/controllers/admin/comments_controller.rb",
-		"/home/hvs-fasya/my_habr/app/controllers/admin/base_controller.rb",
-		"/home/hvs-fasya/my_habr/app/views/welcome/index.html.erb",
-		"/home/hvs-fasya/my_habr/app/views/common/_errors.html.erb",
-		"/home/hvs-fasya/my_habr/app/controllers/admin/welcome_controller.rb",
-		"/home/hvs-fasya/my_habr/app/views/comments/_form.html.erb",
-		"/home/hvs-fasya/my_habr/app/views/categories/show.html.erb",
-		"/home/hvs-fasya/my_habr/db/migrate/20151116170138_add_admin_to_users.rb",
-		"/home/hvs-fasya/my_habr/app/views/comments/edit.html.erb",
-		"/home/hvs-fasya/my_habr/db/migrate/20151110090455_add_user_id_to_comments.rb",
-		"/home/hvs-fasya/my_habr/db/migrate/20151109182154_add_devise_to_users.rb",
-		"/home/hvs-fasya/my_habr/db/migrate/20151103193919_create_users.rb",
-		"/home/hvs-fasya/my_habr/config/environments/development.rb"
+		"/home/hvs-fasya/my_habr/app/controllers/admin/base_controller.rb"
 	],
 	"find":
 	{
@@ -695,67 +759,65 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "spec/models/user_spec.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1896,
+						"buffer_size": 156,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1173,
-								1173
+								60,
+								60
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 720.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/application.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1510,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/environments/development.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1674,
+								1674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -783,7 +845,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -811,112 +873,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "config/routes.rb",
+					"file": "app/models/user.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1769,
+						"buffer_size": 256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								762,
-								762
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/home/hvs-fasya/my_habr/config/routes.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2275,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/questions/index.html.erb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "spec/factories/answers.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 144,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								21
+								239,
+								239
 							]
 						],
 						"settings":
@@ -927,11 +901,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
+					"file": "app/views/layouts/application.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1896,
+								1896
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "app/models/question.rb",
 					"semi_transient": false,
 					"settings":
@@ -955,11 +987,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "app/models/answer.rb",
 					"semi_transient": false,
 					"settings":
@@ -983,24 +1015,28 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "spec/controllers/questions_controller_spec.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3357,
+						"buffer_size": 3582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2209,
-								2209
+								3019,
+								3019
+							],
+							[
+								3029,
+								3029
 							]
 						],
 						"settings":
@@ -1010,27 +1046,113 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1170.0,
+						"translation.y": 2430.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "app/controllers/questions_controller.rb",
+					"buffer": 10,
+					"file": "spec/factories/questions.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 750,
+						"buffer_size": 255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								381,
-								381
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "spec/factories/users.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "spec/rails_helper.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2883,
+								2883
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "spec/support/controller_helpers.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
 							]
 						],
 						"settings":
@@ -1045,20 +1167,48 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "app/controllers/answers_controller.rb",
+					"buffer": 14,
+					"file": "spec/acceptance/create_question_spec.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 505,
+						"buffer_size": 938,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								336,
-								336
+								350,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "spec/support/acceptance_helpers.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								152
 							]
 						],
 						"settings":
@@ -1069,24 +1219,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "spec/controllers/answers_controller_spec.rb",
+					"buffer": 16,
+					"file": "spec/acceptance/sign_in_spec.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1371,
+						"buffer_size": 710,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								490,
-								490
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/controllers/questions_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								487,
+								487
 							]
 						],
 						"settings":
@@ -1096,14 +1275,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 18,
+					"file": "app/views/questions/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/views/questions/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "spec/controllers/answers_controller_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1191,
+								1191
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1127,7 +1392,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 21,
 					"type": "text"
 				}
 			]
