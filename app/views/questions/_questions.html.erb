@@ -3,5 +3,6 @@
 	<p>
 		<%= link_to question.title, question_path(question)%>
 	</p>
+	<p><%= link_to 'Delete', @question, method: :delete %></p>
 
 <%end%>

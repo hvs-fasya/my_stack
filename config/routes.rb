@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
+  use_doorkeeper
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks'}
   #get 'answers/new'
 
   #get 'answers/create'
@@ -12,6 +13,15 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  namespace :api do
+    namespace :v1 do
+      resources :profiles do
+        get :me, on: :collection
+      end
+      resources :questions
+    end
+  end
+  
   root to: 'questions#index'
 
   # Example of regular route:

@@ -1,2 +1,21 @@
-<h1><%= @question.title %></h1>
-<p><%= @question.body %></p>
+<% cache @question %>
+	<h1><%= @question.title %></h1>
+	<p><%= @question.body %></p>
+
+<%end%>
+	<% if can?(:destroy, @question) %>
+		<p><%= link_to 'Delete', @question, method: :delete %></p>
+	<% end %>
+
+<% cache "#{@question}-answer" %>
+	<div class="answers">
+		<% unless @question.answers.empty? %>
+			  <p class="answers-count">Answers count: <%= @question.answers.count %></p>
+			  <%= render @question.answers %>
+		<% else %>
+			<p>There are no answers yet. Yours may be the first.</p>
+		<%end%>
+	</div>
+<%end%>
+
+<%= render "answers/form", answer: @answer = Answer.new %>

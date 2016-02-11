@@ -1,0 +1,23 @@
+<% unless @question.answers.empty? %>
+
+    <div id="question_answers">
+      <strong>Answers:</strong>
+      
+      <ul class="list-unstyled">
+		<% @question.answers.each do |answer| %>
+			<li>
+				<blockquote><small><%= answer.body %></small></blockquote>
+				
+				<small><cite>
+				  <%= answer.created_at.strftime("%d %b %Y at %H:%M") %><br>
+				  <%= link_to 'Edit answer', edit_answer_path(answer), class: "btn btn-link" %>
+				  <%= link_to 'Delete answer', answer_path(answer), method: "delete", data: { confirm: "Are You sure that You want to delete this answer?" },  class: "btn btn-link" %>
+				</cite></small>
+			  <hr>
+			</li>
+		<% end %>
+	  </ul>
+	</div>
+<% else %>
+		<p>There are no answers yet. Yours may be the first.</p>
+<% end %>

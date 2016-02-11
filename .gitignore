@@ -13,6 +13,41 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.idea
+
+/doc/examples
 config/database.yml
-my_stack.sublime-project
-my_stack.sublime-workspace
+config/private_pub.yml
+
+# Ignore uploaded files
+/public/system
+/public/tmp
+/public/uploads
+/public/spec
+
+# Mac OS files
+.DS_Store
+
+# coverage files
+/coverage
+
+.powrc
+
+*.sublime-project
+*.sublime-workspace
+certs/
+
+.yardoc
+/log
+.powenv
+
+# Ignore application configuration
+/config/application.yml
+.zeus.sock
+
+dump.rdb
+config/*.sphinx.conf
+db/sphinx
+
+public/uploads/

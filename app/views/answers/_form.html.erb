@@ -1,0 +1,13 @@
+<%= form_for [@question, @answer], remote: true do |f| %>
+
+  <%= render "common/errors", object: @answer %>
+
+  <div class="field_with_errors">
+    <%= f.label :body, 'Your Answer:' %><br>
+    <%= f.text_area :body, class: "form-control" %>
+  </div>
+  <div class="actions">
+	<%= f.submit "Create answer", :class =>"btn btn-primary btn-xs"%>
+  </div>
+
+<% end %>

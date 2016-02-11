@@ -1,0 +1,11 @@
+<% if object.errors.any? %>
+    <div>
+      <!--<h2><%= pluralize(object.errors.count, "error") %> prohibited this post from being saved:</h2>-->
+
+      <ul class="list-unstyled">
+      <% object.errors.full_messages.each do |message| %>
+        <li class="text-danger"><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>

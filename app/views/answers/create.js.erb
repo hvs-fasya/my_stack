@@ -1,0 +1,6 @@
+
+	// alert("hello from ajax!");
+	$('#answer_body').val('');
+	$(".answers").append("<%= j render @answer %>");
+	$('.answers-count').html('Answers count: ' + '<%= @question.answers.count %>');
+

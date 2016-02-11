@@ -9,15 +9,16 @@ feature 'Index Questions', %q{
     	scenario 'Any user get the whole list of questions' do
     	  questions = create_list(:question, 5)
 		  visit questions_path
-		  save_and_open_page
+		  # save_and_open_page
 		  questions.each do |question|
 		      expect(page).to have_css("a", text: question.title)
 		  end
 		end
 
 		scenario 'Any user get the EMPTY list of questions' do
+		  questions = Question.none
 		  visit questions_path
-		  save_and_open_page
+		  # save_and_open_page
 		  expect(page).to have_content "There are no any questions yet"
 		end
   end

@@ -8,13 +8,10 @@ RSpec.describe QuestionsController, type: :controller do
     # it "returns http success" do
     it 'loads all questions' do
       questions = create_list(:question, 3)
-      # get :index
       # expect(response).to have_http_status(:success)
       expect(assigns(:questions)).to eq questions
     end
     it "renders #index template" do
-      # questions = FactoryGirl.create_list(:question, 3)
-      # get :index
       expect(response).to render_template :index
     end
 
@@ -46,6 +43,7 @@ RSpec.describe QuestionsController, type: :controller do
   end
 
   describe "GET #edit" do
+    let!(:question) { create(:question, user: user) }
     before do
       login(user)
       get :edit, id: question
@@ -83,11 +81,12 @@ RSpec.describe QuestionsController, type: :controller do
   end
 
   describe "PATCH #update" do
-    before do
-      login(user)
-    end
+    let!(:question) { create(:question, user: user) }
     context 'with valid' do
-     before { patch :update, id: question, question: {title: 'new title', body: 'new body'} }
+     before do 
+      login(user)
+      patch :update, id: question, question: {title: 'new title', body: 'new body'}
+     end
       it 'changes question' do
         question.reload
         expect(question.title).to eq 'new title'
@@ -98,7 +97,10 @@ RSpec.describe QuestionsController, type: :controller do
       end
     end
     context 'with invalid' do
-      before { patch :update, id: question, question: {title: nil, body: nil} }
+      before do 
+        login(user)
+        patch :update, id: question, question: {title: nil, body: nil}
+      end
       it 'does not change question attributes' do
         old_title = question.title
         old_body = question.body
@@ -110,21 +112,50 @@ RSpec.describe QuestionsController, type: :controller do
         expect(response).to render_template :edit
       end
     end
+    context "NON-Author tries to update question" do
+      let!(:other_user){ create(:user) }
+      before do 
+        login(other_user)
+        patch :update, id: question, question: {title: 'new title', body: 'new body'}
+      end
+      it 'does not change question attributes' do
+        old_title = question.title
+        old_body = question.body
+        question.reload
+        expect(question.title).to eq old_title
+        expect(question.body).to eq old_body
+      end
+    end
+    context "Guest tries to update question" do
+      before { patch :update, id: question, question: {title: 'new title', body: 'new body'} }
+      it 'does not change question attributes' do
+        old_title = question.title
+        old_body = question.body
+        question.reload
+        expect(question.title).to eq old_title
+        expect(question.body).to eq old_body
+      end
+    end
   end
 
   describe "DELETE #destroy" do
-    before do 
-      login(user)
-      question
+    before { login(user) }
+    context "author deletes his own question" do
+      let!(:question){ create(:question, user: user) }
+      it 'deletes question from DB' do
+        expect {delete :destroy, id: question}.to change(Question, :count).by(-1)
+      end
+      it 'redirects to #index' do
+        delete :destroy, id: question
+        expect(response).to redirect_to questions_path
+      end
     end
-    it 'deletes question from DB' do
-      expect {delete :destroy, id: question}.to change(Question, :count).by(-1)
+    context "NonAuthor can not delete question" do
+      before{ question }
+      it 'does not delete question from DB' do
+        expect {delete :destroy, id: question}.to_not change(Question, :count)
+      end
     end
-    it 'redirects to #index' do
-      delete :destroy, id: question
-      expect(response).to redirect_to questions_path
-    end
-
   end
 
 end

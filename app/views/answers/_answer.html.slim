@@ -1,0 +1,12 @@
+= div_for answer do
+  blockquote
+    small= answer.body
+    br
+    small
+      cite 
+        span= answer.created_at.strftime("%d %b %Y at %H:%M")
+      br
+      span= link_to 'Edit answer', edit_answer_path(answer), class: "btn btn-link"
+      span= ' '
+      span= link_to 'Delete answer', answer_path(answer), method: "delete", data: { confirm: "Are You sure that You want to delete this answer?" },  class: "btn btn-link"
+    hr

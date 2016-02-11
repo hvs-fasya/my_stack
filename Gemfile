@@ -29,6 +29,21 @@ gem 'devise'
 gem 'slim-rails'
 gem 'private_pub'
 gem 'thin'
+gem 'carrierwave'
+gem 'remotipart'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
+gem 'cancancan'
+gem 'doorkeeper'
+gem 'active_model_serializers'
+gem 'sidekiq'
+gem 'whenever'
+gem 'sinatra', require: false
+gem 'mysql2'
+gem 'thinking-sphinx'
+gem 'dotenv'
+gem 'dotenv-deployment', require: 'dotenv/deployment'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,6 +59,8 @@ group :development, :test do
   gem 'pry-byebug', platform: [:ruby_20]
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
   gem 'launchy'
 end
 
@@ -54,9 +71,15 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'letter_opener'
+  gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano-passenger', require: false
 end
 
 group :test do
   gem 'shoulda-matchers', '~> 3.0'
   gem 'factory_girl_rails'
+  gem 'json_spec'
 end
